@@ -11,3 +11,11 @@ feature 'See points' do
     expect(page). to have_content 'Ollie: 10 POINTS'
   end
 end
+
+feature 'Attack' do
+  scenario 'Player 1 clicks a button to attack Player 2' do
+    sign_in_and_play
+    click_button 'Attack!'
+    expect(page).to have_content 'Tan attacked Ollie'
+  end
+end
