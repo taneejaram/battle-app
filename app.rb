@@ -7,6 +7,7 @@ class Battle < Sinatra::Base
   get '/' do
     @player_1_name = params[:player_1_name]
     @player_2_name = params[:player_2_name]
+    #@player_2_points = params[:player_2_points]
     erb :index
   end
 
